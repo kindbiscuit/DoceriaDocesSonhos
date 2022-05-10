@@ -1,4 +1,8 @@
 using DoceriaDocesSonhos.Data;
+using DoceriaDocesSonhos.Models;
+using DoceriaDocesSonhos.Validator;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -25,8 +30,14 @@ namespace DoceriaDocesSonhos
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddFluentValidation(x=> {
+                    x.RegisterValidatorsFromAssemblyContaining<Startup>();
+                    x.ValidatorOptions.LanguageManager.Culture = new CultureInfo("pt-BR");
+                    });
             services.AddDbContext<ApplicationContext>(o => o.UseSqlServer(Configuration.GetConnectionString("Default")));
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
