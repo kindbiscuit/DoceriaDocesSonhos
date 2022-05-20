@@ -5,20 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doceria Doces Sonhos</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
     <header>
         <section class="header">
-            <nav>
-                
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Home</a>
+                <a href="#">Conheça-nos</a>
+                <a href="#">Cardápio</a>
+                <a href="#">Informações</a>
+                <a href="#">Ver carrinho</a>
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()">
+                <div class="icone-menu"></div>
+                <div class="icone-menu"></div>
+                <div class="icone-menu"></div>
+              </span>
+
+            <div>
+                <img src="logo-site.png" class="logo-site" alt="logo do site">
+            </div>
+            <nav class="icones">
+                <a href="https://www.instagram.com/elida.gouv/" target="_blank">
+                    <img src="icone-instagram.png" class="instagram" alt="nosso instagram">
+                </a>
+                <a href="https://twitter.com/egouveia_" target="_blank">
+                    <img src="icone-twitter.png" class="twitter" alt="nosso twitter"></a>
+                <a href="https://www.facebook.com/profile.php?id=100007895179325" target="_blank">
+                    <img src="icone-facebook.png" class="facebook" alt="nosso facebook"></a>
             </nav>
         </section>
     </header>
-    <main>
+
+    <main class="main-home">
         
     </main>
-    <footer>
 
+    <footer class="footer">
     </footer>
+
+    <script type="text/javascript" src="home.js"></script>
+
 </body>
 </html>
