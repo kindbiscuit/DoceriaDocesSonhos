@@ -57,6 +57,7 @@ body {
     display: block;
     transition: 0.3s;
     margin: 18px;
+    padding-top: 30px;
     font-family: Josefin Sans;
   }
   
@@ -69,9 +70,10 @@ body {
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
+    right: 23px;
+    font-size: 50px;
     margin-left: 50px;
+    padding-top: 30px;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -93,6 +95,50 @@ body {
     margin: 6px 0;
   }
 
-  /* carousel */
-
+  /* carousel 
   
+  */
+
+  .tradicao-landing-page {
+    font-family: Josefin Sans;
+    color: #E9A96F;
+    font-size: 38px;
+    padding-top: 118px;
+    align-items: flex-end;
+    text-align: center;
+  }
+
+  .paragrafo-landing-page {
+    font-family:EB Garamond;
+    font-size: 20px;
+    color:#753E0C;
+    padding-top: 22px;
+    text-align: center;
+  }
+
+  .btn-cardapio {
+    width: 122px;
+    height: 32px;
+    font-family: Josefin Sans;
+    font-size: 15px;
+    color: white;
+    background-color: #753E0C;
+    border: white;
+  }
+
+  .btn-cardapio:hover {
+    width: 122px;
+    height: 32px;
+    font-family: Josefin Sans;
+    font-size: 15px;
+    color:#E9A96F;
+    background-color: #753E0C;
+    border: white;
+  }
+
+
+  .cardapio-landing-page {
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+  }
