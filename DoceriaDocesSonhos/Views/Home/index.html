@@ -5,20 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doceria Doces Sonhos</title>
+    <link rel="stylesheet" type="text/css" href="style/home.css">
 </head>
 <body>
     <header>
         <section class="header">
-            <nav>
-                
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Home</a>
+                <a href="#">Conheça-nos</a>
+                <a href="#">Cardápio</a>
+                <a href="#">Informações</a>
+                <a href="#">Ver carrinho</a>
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()">
+                <div class="icone-menu"></div>
+                <div class="icone-menu"></div>
+                <div class="icone-menu"></div>
+              </span>
+
+            <div>
+                <img src="img/logo-site.png" class="logo-site" alt="logo do site">
+            </div>
+            <nav class="icones">
+                <a href="https://www.instagram.com/elida.gouv/" target="_blank">
+                    <img src="img/icone-instagram.png" class="instagram" alt="nosso instagram">
+                </a>
+                <a href="https://twitter.com/egouveia_" target="_blank">
+                    <img src="img/icone-twitter.png" class="twitter" alt="nosso twitter"></a>
+                <a href="https://www.facebook.com/profile.php?id=100007895179325" target="_blank">
+                    <img src="img/icone-facebook.png" class="facebook" alt="nosso facebook"></a>
             </nav>
         </section>
     </header>
-    <main>
-        
-    </main>
-    <footer>
 
+    <main class="main-landing-page">
+        <section class="carousel"></section>
+        <section class="texto-landing-page">
+            <h1 class="tradicao-landing-page">TRADIÇÃO DESDE 1957</h1>
+            <p class="paragrafo-landing-page">Desde 1957, participamos da história das famílias dos <br> nossos clientes, servindo nossos doces artesanais e exclusivos.</p>
+        </section>
+        <div class="cardapio-landing-page">
+            <button class="btn-cardapio" type="button">Cardápio
+                <a href="#" target="_blank"></a>
+            </button>
+        </div>
+        
+    
+    </main>
+
+    <footer class="footer">
     </footer>
+
+    <script type="text/javascript" src="js/home.js"></script>
+
 </body>
 </html>

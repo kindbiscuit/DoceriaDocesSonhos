@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+}
+
+.header {
+    display: flex;
+    background-color:#E9A96F;
+    height: 160px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-site {
+    height: 140px;
+    margin-left: 60px;
+    margin-right: -20px;
+}
+
+.instagram, .twitter, .facebook {
+    height: 40px;
+    width: 40px;
+}
+
+/* menu */
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #753E0C;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* links menu */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin: 18px;
+    padding-top: 30px;
+    font-family: Josefin Sans;
+  }
+  
+  .sidenav a:hover {
+    color: #E9A96F;
+    font-size: 28px;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 23px;
+    font-size: 50px;
+    margin-left: 50px;
+    padding-top: 30px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .icone-menu {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  /* carousel 
+  
+  */
+
+  .tradicao-landing-page {
+    font-family: Josefin Sans;
+    color: #E9A96F;
+    font-size: 38px;
+    padding-top: 118px;
+    align-items: flex-end;
+    text-align: center;
+  }
+
+  .paragrafo-landing-page {
+    font-family:EB Garamond;
+    font-size: 20px;
+    color:#753E0C;
+    padding-top: 22px;
+    text-align: center;
+  }
+
+  .btn-cardapio {
+    width: 122px;
+    height: 32px;
+    font-family: Josefin Sans;
+    font-size: 15px;
+    color: white;
+    background-color: #753E0C;
+    border: white;
+  }
+
+  .btn-cardapio:hover {
+    width: 122px;
+    height: 32px;
+    font-family: Josefin Sans;
+    font-size: 15px;
+    color:#E9A96F;
+    background-color: #753E0C;
+    border: white;
+  }
+
+
+  .cardapio-landing-page {
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+  }
