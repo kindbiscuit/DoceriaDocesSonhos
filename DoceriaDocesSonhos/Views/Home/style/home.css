@@ -10,7 +10,7 @@
 }
 
 body {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 .header {
@@ -50,95 +50,213 @@ body {
   }
   
   /* links menu */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    margin: 18px;
-    padding-top: 30px;
-    font-family: Josefin Sans;
-  }
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  margin: 18px;
+  padding-top: 30px;
+  font-family: Josefin Sans;
+}
   
-  .sidenav a:hover {
-    color: #E9A96F;
-    font-size: 28px;
-  }
+.sidenav a:hover {
+  color: #E9A96F;
+  font-size: 28px;
+}
   
   /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 23px;
-    font-size: 50px;
-    margin-left: 50px;
-    padding-top: 30px;
-  }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  font-size: 50px;
+  margin-left: 50px;
+  padding-top: 30px;
+}
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
-  .icone-menu {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-  }
+.icone-menu {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  cursor: pointer;
+}
 
-  /* carousel 
+  /* carousel */
+
+.carousel {
+  overflow: hidden;
+  max-width: 500px;
+  position: relative;
+}
+
+.carousel .carousel_item, .carousel .carousel_item--hidden {
+  display: none;
+}
+
+.carousel .carousel_item img {
+  width: 380px;
+  max-width: 500px;
+  height: 500px;
+}
+
+.carousel .carousel_item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+.carousel .carousel_actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 80%;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.carousel .carousel_actions button {
+  width: 37px;
+  height: 38px;
+  border-radius: 50%;
+  border: 0;
+  font-weight: bold;
+  color:#8EBB7E;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.main-landing-page {
+  display: flex;
+  justify-content: flex-start;
   
-  */
+}
 
-  .tradicao-landing-page {
-    font-family: Josefin Sans;
-    color: #E9A96F;
-    font-size: 38px;
-    padding-top: 118px;
-    align-items: flex-end;
-    text-align: center;
-  }
+.conteudo-landing-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
 
-  .paragrafo-landing-page {
-    font-family:EB Garamond;
-    font-size: 20px;
-    color:#753E0C;
-    padding-top: 22px;
-    text-align: center;
-  }
+.tradicao-landing-page {
+  font-family: Josefin Sans;
+  width: 100%;
+  color: #E9A96F;
+  font-size: 44px;
+  padding-top: 118px;
+  text-align: left;
+  align-items: center;
+  margin-left: 96px;
+}
 
-  .btn-cardapio {
-    width: 122px;
-    height: 32px;
-    font-family: Josefin Sans;
-    font-size: 15px;
-    color: white;
-    background-color: #753E0C;
-    border: white;
-  }
+.paragrafo-landing-page {
+  font-family:EB Garamond;
+  font-size: 25px;
+  color:#753E0C;
+  padding-top: 22px;
+  text-align: left;
+  margin-left: 96px;
+}
 
-  .btn-cardapio:hover {
-    width: 122px;
-    height: 32px;
-    font-family: Josefin Sans;
-    font-size: 15px;
-    color:#E9A96F;
-    background-color: #753E0C;
-    border: white;
-  }
+.btn-cardapio {
+  width: 122px;
+  height: 36px;
+  font-family: Josefin Sans;
+  font-size: 17px;
+  color: white;
+  background-color: #753E0C;
+  border: 0;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 48px;
+}
 
+.btn-cardapio:hover {
+  width: 122px;
+  height: 36px;
+  font-family: Josefin Sans;
+  font-size: 17px;
+  color:#E9A96F;
+  background-color: #753E0C;
+  border: white;
+}
 
-  .cardapio-landing-page {
-    display: flex;
-    justify-content: center;
-    padding-top: 23px;
-  }
+.cardapio-landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-self: auto;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+hr {
+  height: 10px;
+  background-color: #753E0C;
+  border: 0;
+  margin-top: -4px;
+}
+
+.pagina2 {
+  background-color:#8EBB7E;
+  height: 710px;
+  position:relative;
+}
+
+.conteudo-page2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.titulo1-page2 {
+  color:white;
+  font-family:Reenie Beanie;
+  text-align: center;
+  font-weight: 100;
+  font-size: 42px;
+  padding: 70px;
+}
+
+.titulo2-page2 {
+  font-family: Josefin Sans;
+  color: #753E0C;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -50px;
+}
+
+.paragrafo-page2 {
+  font-family: EB Garamond;
+  color:white;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 35px;
+}

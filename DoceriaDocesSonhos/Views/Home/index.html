@@ -10,7 +10,6 @@
 <body>
     <header>
         <section class="header">
-
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Pedidos</a>
@@ -20,14 +19,11 @@
                 <a href="#">Informações</a>
                 <a href="#">Ver carrinho</a>
               </div>
-              
-              <!-- Use any element to open the sidenav -->
               <span onclick="openNav()">
                 <div class="icone-menu"></div>
                 <div class="icone-menu"></div>
                 <div class="icone-menu"></div>
               </span>
-
             <div>
                 <img src="img/logo-site.png" class="logo-site" alt="logo do site">
             </div>
@@ -43,21 +39,42 @@
         </section>
     </header>
 
-    <main class="main-landing-page">
-        <section class="carousel"></section>
-        <section class="texto-landing-page">
-            <h1 class="tradicao-landing-page">TRADIÇÃO DESDE 1957</h1>
-            <p class="paragrafo-landing-page">Desde 1957, participamos da história das famílias dos <br> nossos clientes, servindo nossos doces artesanais e exclusivos.</p>
-        </section>
-        <div class="cardapio-landing-page">
-            <button class="btn-cardapio" type="button">Cardápio
-                <a href="#" target="_blank"></a>
-            </button>
+    <section class="main-landing-page">
+        <div class="carousel">
+            <div class="carousel_item carousel_item--visible">
+                <img src="img/foto-principal.jpg" alt="foto bolo de chocolate">
+            </div>
+            <div class="carousel_item">
+                <img src="img/foto-creme.jpg" alt="foto de um creme">
+            </div>
+            <div class="carousel_item">
+                <img src="img/muffin.jpg" alt="foto muffin">
+            </div>
+            <div class="carousel_actions">
+                <button id="carousel_button--prev" aria-label="Previous"><</button>
+                <button id="carousel_button--next" aria-label="Next">></button>
+            </div>
         </div>
-        
-    
-    </main>
-
+        <section class="conteudo-landing-page">
+            <h1 class="tradicao-landing-page">TRADIÇÃO DESDE 1957</h1>
+            <p class="paragrafo-landing-page">Desde 1957, participamos da história das famílias dos nossos clientes, <br> servindo nossos doces artesanais e exclusivos.</p>
+            <div class="cardapio-landing-page">
+                <button class="btn-cardapio" type="button">Cardápio
+                    <a href="#" target="_blank"></a>
+                </button>
+            </div>
+        </section>
+    </section>
+    <hr>
+    <section class="pagina2">
+        <div class="conteudo-page2">
+            <h2 class="titulo1-page2">Conheça a</h2>
+            <h1 class="titulo2-page2">Doces Sonhos</h1>
+            <p class="paragrafo-page2">Já conhece nossa doceria? Provar alguma especialidade nossa é como estar <br> em um dos seus melhores sonhos! Além de criarmos um clima acolhedor, <br> tudo o que é servido por aqui é feito com muita particularidade e amor. <br> Confira nossos produtos mais pedidos:
+            </p>
+        </div>
+    </section>
+    <hr>
     <footer class="footer">
     </footer>
 
