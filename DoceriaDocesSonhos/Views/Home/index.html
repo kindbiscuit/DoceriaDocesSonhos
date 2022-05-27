@@ -41,20 +41,21 @@
 
     <section class="main-landing-page">
         <div class="carousel">
-            <div class="carousel_item carousel_item--visible">
+            <div class="primeiro_carrossel carousel_item carousel_item--visible">
                 <img src="img/foto-principal.jpg" alt="foto bolo de chocolate">
             </div>
-            <div class="carousel_item">
+            <div class="primeiro_carrossel carousel_item">
                 <img src="img/foto-creme.jpg" alt="foto de um creme">
             </div>
-            <div class="carousel_item">
+            <div class="primeiro_carrossel carousel_item">
                 <img src="img/muffin.jpg" alt="foto muffin">
             </div>
             <div class="carousel_actions">
-                <button id="carousel_button--prev" aria-label="Previous"><</button>
-                <button id="carousel_button--next" aria-label="Next">></button>
+                <button onclick="logicaCarrossel('primeiro_carrossel', false)" aria-label="Previous"><</button>
+                <button onclick="logicaCarrossel('primeiro_carrossel', true)" aria-label="Next">></button>
             </div>
         </div>
+      
         <section class="conteudo-landing-page">
             <h1 class="tradicao-landing-page">TRADIÇÃO DESDE 1957</h1>
             <p class="paragrafo-landing-page">Desde 1957, participamos da história das famílias dos nossos clientes, <br> servindo nossos doces artesanais e exclusivos.</p>
@@ -78,7 +79,8 @@
     <footer class="footer">
     </footer>
 
-    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/menuHome.js"></script>
+    <script type="text/javascript" src="js/carrosselHome.js"></script>
 
 </body>
 </html>
