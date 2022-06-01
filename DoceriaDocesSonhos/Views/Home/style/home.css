@@ -331,14 +331,15 @@ body {
 /* pagina de cardapio */
 
 .pagina-cardapio {
-  height: 1105px;
+  height: 1680px;
   background-color: white;
 }
 
 .foto-principal-cardapio {
   opacity: 15%;
-  width: 100%;
   position: absolute;
+  height: 1680px;
+  width: 1349px;
 }
 
 .conteudo-pagina-de-cardapio {
@@ -395,6 +396,7 @@ body {
   align-items: center;
 }
 
+
 .produtos-cardapio h1 {
   font-size: 24px;
   font-family: EB Garamond;
@@ -406,3 +408,29 @@ body {
   padding-left: 7px;
 }
 
+.produto4 {
+}
+
+.btn-pedido {
+  height: 32px;
+  width:270px;
+  color:white;
+  background-color: #753E0C;
+  font-family: EB Garamond;
+  font-size: 20px;
+  font-weight: 100;
+  border:0;
+  cursor: pointer;
+}
+
+.botao-pedido {
+  display:flex;
+  justify-content: center;  
+  align-items: center;
+  padding-top: 120px;
+}
+
+.newsletter {
+  height: 450px;
+  background-color: #BE6144;
+}
