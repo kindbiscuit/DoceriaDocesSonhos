@@ -412,7 +412,7 @@ body {
   height: 36px;
   width: 300px;
   color:white;
-  background-color: #753E0C;
+  background-color:#753E0C;
   font-family: EB Garamond;
   font-size: 20px;
   font-weight: 100;
@@ -442,4 +442,48 @@ body {
 .newsletter {
   height: 450px;
   background-color: #BE6144;
+}
+
+.conteudo-newsletter h1 {
+  font-family: Josefin Sans;
+  font-size: 40px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 94px;
+}
+
+.conteudo-newsletter h3 {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 33px;
+}
+
+.input-nome, .input-email {
+  height: 39px;
+  width: 238px;
+  border: 0;
+  font-size: 16px;
+  color: #706262;
+}
+
+.ipt-enviar {
+  height: 39px;
+  width: 238px;
+  background-color:#753E0C;
+  border: 0;
+  cursor: pointer;
+  font-family: EB Garamond;
+  color:white;
+  font-size: 18px;
+}
+
+.inputs-newsletter {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-evenly;
+
 }
