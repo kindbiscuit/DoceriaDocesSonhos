@@ -187,8 +187,8 @@ body {
 }
 
 .btn-cardapio {
-  width: 122px;
-  height: 36px;
+  width: 124px;
+  height: 35px;
   font-family: Josefin Sans;
   font-size: 17px;
   color: white;
@@ -200,10 +200,10 @@ body {
 }
 
 .btn-cardapio:hover {
-  width: 122px;
-  height: 36px;
+  width: 124px;
+  height: 35px;
   font-family: Josefin Sans;
-  font-size: 17px;
+  font-size: 18px;
   color:#E9A96F;
   background-color: #753E0C;
   border: white;
@@ -331,14 +331,15 @@ body {
 /* pagina de cardapio */
 
 .pagina-cardapio {
-  height: 1105px;
+  height: 1680px;
   background-color: white;
 }
 
 .foto-principal-cardapio {
   opacity: 15%;
-  width: 100%;
   position: absolute;
+  height: 1680px;
+  width: 1349px;
 }
 
 .conteudo-pagina-de-cardapio {
@@ -395,6 +396,7 @@ body {
   align-items: center;
 }
 
+
 .produtos-cardapio h1 {
   font-size: 24px;
   font-family: EB Garamond;
@@ -406,3 +408,38 @@ body {
   padding-left: 7px;
 }
 
+.btn-pedido {
+  height: 36px;
+  width: 300px;
+  color:white;
+  background-color: #753E0C;
+  font-family: EB Garamond;
+  font-size: 20px;
+  font-weight: 100;
+  border:0;
+  cursor: pointer;
+}
+
+.btn-pedido:hover {
+  height: 36px;
+  width: 300px;
+  color:white;
+  background-color:#BE6144;
+  font-family: EB Garamond;
+  font-size: 21px;
+  font-weight: 100;
+  border:0;
+  cursor: pointer;
+}
+
+.botao-pedido {
+  display:flex;
+  justify-content: center;  
+  align-items: center;
+  padding-top: 120px;
+}
+
+.newsletter {
+  height: 450px;
+  background-color: #BE6144;
+}
