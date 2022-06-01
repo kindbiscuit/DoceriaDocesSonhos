@@ -409,12 +409,12 @@ body {
 }
 
 .produto5 {
-  padding-left: 10px;
+  padding-right: -20px;
 }
 
 .btn-pedido {
-  height: 32px;
-  width:270px;
+  height: 36px;
+  width: 300px;
   color:white;
   background-color: #753E0C;
   font-family: EB Garamond;
