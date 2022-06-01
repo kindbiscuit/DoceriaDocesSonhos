@@ -217,7 +217,7 @@ body {
   margin-left: 50px;
 }
 
-hr {
+.hr-landing-page {
   height: 10px;
   background-color: #753E0C;
   border: 0;
@@ -251,6 +251,15 @@ hr {
   color: #753E0C;
   text-align: center;
   font-size: 50px;
+  font-weight: bold;
+  margin-top: -50px;
+}
+
+.titulo2-page2:hover {
+  font-family: Josefin Sans;
+  color:#753E0C;
+  text-align: center;
+  font-size: 52px;
   font-weight: bold;
   margin-top: -50px;
 }
@@ -312,3 +321,88 @@ hr {
   cursor: pointer;
 
 }
+
+.hr-pagina2 {
+  height: 10px;
+  background-color: #753E0C;
+  border: 0;
+}
+
+/* pagina de cardapio */
+
+.pagina-cardapio {
+  height: 1105px;
+  background-color: white;
+}
+
+.foto-principal-cardapio {
+  opacity: 15%;
+  width: 100%;
+  position: absolute;
+}
+
+.conteudo-pagina-de-cardapio {
+  position: relative;
+  z-index: 2;
+}
+
+.titulo-cardapio {
+  font-family: Josefin Sans;
+  font-size: 52px;
+  color: #E9A96F;
+  padding-top: 87px;
+  padding-left: 70px;
+}
+
+.topo-cardapio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 70px;
+  padding-top: 60px;
+}
+
+.conteudo-pagina-de-cardapio h2 {
+  font-size: 45px;
+  font-family: Reenie Beanie;
+  color: #753E0C;
+  font-weight: 100;
+}
+
+.topo-cardapio h1 {
+  color:#8EBB7E;
+  padding-top: 5px;
+}
+
+.imagens-cardapio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.imagens-cardapio img {
+  border: 1px solid #E9A96F;
+  width: 150px;
+  height:170px;
+}
+
+.produtos-cardapio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.produtos-cardapio h1 {
+  font-size: 24px;
+  font-family: EB Garamond;
+  color:#753E0C;
+  padding-top: 20px;
+}
+
+.produto1 {
+  padding-left: 7px;
+}
+
