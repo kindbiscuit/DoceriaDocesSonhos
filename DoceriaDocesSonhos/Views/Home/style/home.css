@@ -439,9 +439,27 @@ body {
   padding-top: 120px;
 }
 
+/*newsletter*/
+
 .newsletter {
-  height: 450px;
+  height: 430px;
   background-color: #BE6144;
+}
+
+.linha-decoracao {
+  padding-top: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.linha2 {
+  margin-top: -30px;
+}
+
+.inputs-newsletter {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .conteudo-newsletter h1 {
@@ -450,7 +468,7 @@ body {
   color: white;
   font-weight: 100;
   text-align: center;
-  padding-top: 94px;
+  padding-top: 55px;
 }
 
 .conteudo-newsletter h3 {
@@ -459,31 +477,69 @@ body {
   color: white;
   font-weight: 100;
   text-align: center;
-  padding-top: 33px;
+  padding-top: 27px;
 }
 
 .input-nome, .input-email {
   height: 39px;
   width: 238px;
-  border: 0;
   font-size: 16px;
-  color: #706262;
 }
 
 .ipt-enviar {
   height: 39px;
   width: 238px;
-  background-color:#753E0C;
-  border: 0;
+  background-color:#8EBB7E;
+  border:none;
   cursor: pointer;
   font-family: EB Garamond;
   color:white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.inputs-newsletter {
-  padding-top: 29px;
-  display: flex;
-  justify-content: space-evenly;
+.ipt-enviar:hover {
+  height: 39px;
+  width: 238px;
+  background-color:#8EBB7E;
+  border:none;
+  cursor: pointer;
+  font-family: EB Garamond;
+  color:white;
+  font-size: 22px;
+}
 
+.input-enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.footer {
+  height: 228px;
+  background-color: #8EBB7E;
+}
+
+.inf-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.horarios h1, .encomendas h1, .endereco h1 {
+  font-family: EB Garamond;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+  padding-top: 18px;
+}
+
+.horarios h2, .encomendas h2, .endereco h2 {
+  font-family: EB Garamond;
+  font-weight: 500;
+  font-size: 23px;
+  color: white;
+  font-weight: 500;
 }
