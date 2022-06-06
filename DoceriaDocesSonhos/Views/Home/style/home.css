@@ -224,9 +224,11 @@ body {
   margin-top: -4px;
 }
 
+/* conheça-nos */
+
 .pagina2 {
   background-color:#8EBB7E;
-  height: 900px;
+  height: 850px;
   position:relative;
 }
 
@@ -288,8 +290,8 @@ body {
 
 .carousel2 .carousel_item img {
   max-width: 320px;
-  width: 296px;
-  height: 330px;
+  width: 291px;
+  height: 325px;
   border-radius: 10%;
 }
 
@@ -542,4 +544,8 @@ body {
   font-size: 23px;
   color: white;
   font-weight: 500;
+}
+
+.horarios, .encomendas, .endereco {
+  text-align:center;
 }
