@@ -84,8 +84,12 @@ body {
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav { 
+    padding-top: 15px;
+  }
+  .sidenav a { 
+    font-size: 18px;
+  }
 }
 
 .icone-menu {
@@ -334,6 +338,7 @@ body {
 
 .pagina-cardapio {
   height: 1680px;
+  width: 1349px;
   background-color: white;
 }
 
@@ -345,8 +350,8 @@ body {
 }
 
 .conteudo-pagina-de-cardapio {
-  position: relative;
   z-index: 2;
+  position: relative;
 }
 
 .titulo-cardapio {
@@ -397,7 +402,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
 
 .produtos-cardapio h1 {
   font-size: 24px;
@@ -488,7 +492,7 @@ body {
   font-size: 16px;
 }
 
-.ipt-enviar {
+#iptEnviar {
   height: 39px;
   width: 238px;
   background-color:#8EBB7E;
@@ -499,7 +503,7 @@ body {
   font-size: 20px;
 }
 
-.ipt-enviar:hover {
+#iptEnviar:hover {
   height: 39px;
   width: 238px;
   background-color:#8EBB7E;
@@ -510,7 +514,7 @@ body {
   font-size: 22px;
 }
 
-.input-enviar {
+#inputEnviar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,3 +553,432 @@ body {
 .horarios, .encomendas, .endereco {
   text-align:center;
 }
+
+@media only screen and (max-width: 1348px) {
+  .pagina-cardapio {
+    width: 1348px;
+  }
+
+  .foto-principal-cardapio {
+    width: 100%;
+    position: absolute;
+  }
+
+  .conteudo-pagina-de-cardapio h2 {
+    font-size: 40px;
+  }
+  
+  .topo-cardapio h1 {
+    padding-top: 5px;
+  }
+
+  .imagens-cardapio img {
+    border: 1px solid #E9A96F;
+    width: 140px;
+    height:160px;
+  }
+  
+  .produtos-cardapio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .produtos-cardapio h1 {
+    font-size: 24px;
+    font-family: EB Garamond;
+    color:#753E0C;
+    padding-top: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    height: 150px;
+  }
+
+  .logo-site {
+    height: 120px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 35px;
+    width: 35px;
+  }
+
+  .icone-menu {
+    width: 26px;
+    height: 3px; 
+  }
+
+  .tradicao-landing-page {
+    font-size: 32px;
+    margin-left: 60px;
+  }
+
+  .paragrafo-landing-page {
+    font-size: 20px;
+    margin-left: 60px;
+    padding-top: 48px;
+  }
+
+  .btn-cardapio {
+    width: 120px;
+    height: 31px;
+    font-size: 15px;
+  }
+
+  .btn-cardapio:hover {
+    width: 120px;
+    height: 31px;
+    font-size: 16px;
+  }
+
+  .cardapio-landing-page {
+    margin-left: 10px;
+  }
+
+  .carousel .carousel_item img {
+    width: 320px;
+    max-width: 500px;
+    height: 480px;
+  }
+
+  .carousel .carousel_actions button {
+    width: 35px;
+    height: 36px;
+  }
+
+  .titulo1-page2 {
+    font-size: 40px;
+  }
+  
+  .titulo2-page2 {
+    font-size: 47px;
+  }
+  
+  .titulo2-page2:hover {
+    font-size: 48px;
+  }
+  
+  .paragrafo-page2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 140px;
+  }
+
+  .logo-site {
+    height: 113px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 31px;
+    width: 31px;
+  }
+
+  .icone-menu {
+    width: 22px;
+    height: 2px; 
+  }
+
+  .tradicao-landing-page {
+    font-size: 26px;
+    margin-left: 40px;
+    padding-top: 96px;
+  }
+
+  .paragrafo-landing-page {
+    font-size: 19px;
+    margin-left: 40px;
+    padding-top: 20px;
+  }
+
+  .btn-cardapio {
+    width: 112px;
+    height: 29px;
+    font-size: 14px;
+  }
+
+  .btn-cardapio:hover {
+    width: 112px;
+    height: 29px;
+    font-size: 15px;
+  }
+
+  .cardapio-landing-page {
+    margin-left: -10px;
+  }
+
+  .carousel .carousel_item img {
+    width: 310px;
+    max-width: 400px;
+    height: 430px;
+  }
+
+  .carousel .carousel_actions button {
+    width: 32px;
+    height: 33px;
+    font-size: 28px;
+  }
+
+  .titulo1-page2 {
+    font-size: 35px;
+  }
+  
+  .titulo2-page2 {
+    font-size: 41px;
+  }
+  
+  .titulo2-page2:hover {
+    font-size: 42px;
+  }
+  
+  .paragrafo-page2 {
+    font-size: 18px;
+  }
+
+  .carousel2 .carousel_item img {
+    max-width: 300px;
+    width: 285px;
+    height: 319px;
+  }
+
+  .carousel2 .carousel_actions button {
+    width: 35px;
+    height: 36px;
+    font-size: 28px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    height: 130px;
+  }
+
+  .logo-site {
+    height: 108px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 27px;
+    width: 27px;
+  }
+
+  .icone-menu {
+    width: 19px;
+    height: 2px; 
+  }
+
+  .tradicao-landing-page {
+    font-size: 17px;
+    margin-left: 22px;
+    padding-top: 82px;
+  }
+
+  .paragrafo-landing-page {
+    font-size: 16px;
+    margin-left: 22px;
+    padding-top: 20px;
+  }
+
+  .btn-cardapio {
+    width: 101px;
+    height: 27px;
+    font-size: 13px;
+  }
+
+  .btn-cardapio:hover {
+    width: 101px;
+    height: 27px;
+    font-size: 14px;
+  }
+
+  .cardapio-landing-page {
+    margin-left: -30px;
+  }
+
+  .carousel .carousel_item img {
+    width: 290px;
+    max-width: 300px;
+    height: 410px;
+  }
+
+  .carousel .carousel_actions button {
+    width: 30px;
+    height: 31px;
+    font-size: 28px;
+  }
+
+  .titulo1-page2 {
+    padding-top: 90px;
+    font-size: 30px;
+  }
+  
+  .titulo2-page2 {
+    font-size: 36px;
+  }
+  
+  .titulo2-page2:hover {
+    font-size: 37px;
+  }
+  
+  .paragrafo-page2 {
+    font-size: 14px;
+  }
+
+  .carousel2 .carousel_item img {
+    max-width: 270px;
+    width: 255px;
+    height: 290px;
+  }
+
+  .carousel2 .carousel_actions button {
+    width: 30px;
+    height: 31px;
+    font-size: 22px;
+  }
+
+  .pagina2 {
+    height: 790px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .header {
+    height: 110px;
+  }
+
+  .logo-site {
+    height: 88px;
+    padding-right: 30px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 19px;
+    width: 19px;
+  }
+
+  .icone-menu {
+    width: 17px;
+    height: 2px;
+    margin-left: 10px;
+  }
+
+  .tradicao-landing-page {
+    font-size: 21px;
+    margin-left: 30px;
+    margin-right: 0;
+    padding-top: 50px;
+  }
+
+  .paragrafo-landing-page {
+    font-size: 16px;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+
+  .btn-cardapio {
+    width: 90px;
+    height: 23px;
+    font-size: 11px;
+  }
+
+  .btn-cardapio:hover {
+    width: 90px;
+    height: 23px;
+    font-size: 12px;
+  }
+
+  .cardapio-landing-page {
+    margin-left: -20px;
+  }
+
+  .carousel .carousel_item img {
+    width: 280px;
+    max-width: 300px;
+    height: 400px;
+  }
+
+  .carousel .carousel_actions button {
+    width: 28px;
+    height: 29px;
+    font-size: 26px;
+  }
+
+  .titulo1-page2 {
+    padding-top: 100px;
+    font-size: 28px;
+  }
+  
+  .titulo2-page2 {
+    font-size: 34px;
+  }
+  
+  .titulo2-page2:hover {
+    font-size: 35px;
+  }
+  
+  .paragrafo-page2 {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+
+  .carousel2 .carousel_item img {
+    max-width: 250px;
+    width: 215px;
+    height: 250px;
+  }
+
+  .carousel2 .carousel_actions button {
+    width: 28px;
+    height: 29px;
+    font-size: 20px;
+  }
+
+  .pagina2 {
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 242px) {
+  .titulo1-page2 {
+    padding-top: 100px;
+    font-size: 25px;
+  }
+    
+    .titulo2-page2 {
+      font-size: 31px;
+    }
+    
+    .titulo2-page2:hover {
+      font-size: 32px;
+    }
+    
+    .paragrafo-page2 {
+      font-size: 12px;
+      padding-top: 30px;
+    }
+  
+    .carousel2 .carousel_item img {
+      max-width: 240px;
+      width: 205px;
+      height: 240px;
+    }
+  
+    .carousel2 .carousel_actions button {
+      width: 26px;
+      height: 27px;
+      font-size: 18px;
+    }
+  
+    .pagina2 {
+      height: 790px;
+    }
+  }
