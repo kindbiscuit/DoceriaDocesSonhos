@@ -337,7 +337,7 @@ body {
 /* pagina de cardapio */
 
 .pagina-cardapio {
-  height: 1680px;
+  height: 1679px;
   width: 1349px;
   background-color: white;
 }
@@ -345,13 +345,14 @@ body {
 .foto-principal-cardapio {
   opacity: 15%;
   position: absolute;
-  height: 1680px;
+  height: 1679px;
   width: 1349px;
 }
 
 .conteudo-pagina-de-cardapio {
   z-index: 2;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .titulo-cardapio {
@@ -360,14 +361,7 @@ body {
   color: #E9A96F;
   padding-top: 87px;
   padding-left: 70px;
-}
-
-.topo-cardapio {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-left: 70px;
-  padding-top: 60px;
+  position: relative;
 }
 
 .conteudo-pagina-de-cardapio h2 {
@@ -375,17 +369,15 @@ body {
   font-family: Reenie Beanie;
   color: #753E0C;
   font-weight: 100;
-}
-
-.topo-cardapio h1 {
-  color:#8EBB7E;
-  padding-top: 5px;
+  padding-left: 76px;
+  padding-top: 70px;
+  position:relative;
 }
 
 .imagens-cardapio {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
   margin-top: 40px;
 }
@@ -496,7 +488,7 @@ body {
   height: 39px;
   width: 238px;
   background-color:#8EBB7E;
-  border:none;
+  border: solid 1px white;
   cursor: pointer;
   font-family: EB Garamond;
   color:white;
@@ -507,7 +499,7 @@ body {
   height: 39px;
   width: 238px;
   background-color:#8EBB7E;
-  border:none;
+  border: solid 1px white;
   cursor: pointer;
   font-family: EB Garamond;
   color:white;
@@ -554,9 +546,11 @@ body {
   text-align:center;
 }
 
-@media only screen and (max-width: 1348px) {
+@media only screen and (max-width: 1678px) {
+
   .pagina-cardapio {
-    width: 1348px;
+    width: 980px;
+    max-width: 800px;
   }
 
   .foto-principal-cardapio {
@@ -564,34 +558,26 @@ body {
     position: absolute;
   }
 
-  .conteudo-pagina-de-cardapio h2 {
-    font-size: 40px;
+  .conteudo-pagina-de-cardapio {
+    width: 100%;
   }
-  
-  .topo-cardapio h1 {
-    padding-top: 5px;
+
+  .conteudo-pagina-de-cardapio h2 {
+    font-size: 38px;
+  }
+
+  .titulo-cardapio {
+    font-size: 50px;
   }
 
   .imagens-cardapio img {
-    border: 1px solid #E9A96F;
-    width: 140px;
-    height:160px;
-  }
-  
-  .produtos-cardapio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    width: 130px;
+    height:150px;
   }
   
   .produtos-cardapio h1 {
-    font-size: 24px;
-    font-family: EB Garamond;
-    color:#753E0C;
-    padding-top: 20px;
+    font-size: 22px;
   }
-  
 }
 
 @media only screen and (max-width: 1000px) {
@@ -665,6 +651,98 @@ body {
   
   .paragrafo-page2 {
     font-size: 22px;
+  }
+
+  .pagina-cardapio {
+    height: 1600px;
+  }
+
+  .foto-principal-cardapio {
+    width: 100%;
+    height: 1600px;
+    position: absolute;
+  }
+
+  .conteudo-pagina-de-cardapio h2 {
+    font-size: 34px;
+  }
+
+  .titulo-cardapio {
+    font-size: 42px;
+  }
+
+  .imagens-cardapio img {
+    width: 125px;
+    height:145px;
+  }
+  
+  .produtos-cardapio h1 {
+    font-size: 20px;
+  }
+
+  .newsletter {
+    height: 412px;
+  }
+  
+  .linha-decoracao {
+    padding-top: 13px;
+  }
+
+  .linha2 {
+    margin-top: -24px;
+  }
+  
+  .inputs-newsletter {
+    padding-top: 29px;
+  }
+  
+  .conteudo-newsletter h1 {
+    font-size: 39px;
+    padding-top: 55px;
+  }
+  
+  .conteudo-newsletter h3 {
+    font-size: 19px;
+    padding-top: 27px;
+  }
+  
+  .input-nome, .input-email {
+    height: 37px;
+    width: 233px;
+    font-size: 16px;
+  }
+  
+  #iptEnviar {
+    height: 37px;
+    width: 233px;
+    font-size: 20px;
+  }
+  
+  #iptEnviar:hover {
+    height: 37px;
+    width: 233px;
+    font-size: 21px;
+  }
+  
+  #inputEnviar {
+    padding-top: 45px;
+  }
+
+  .footer {
+    height: 215px;
+  }
+  
+  .inf-footer {
+    padding-top: 33px;
+  }
+  
+  .horarios h1, .encomendas h1, .endereco h1 {
+    font-size: 17px;
+    padding-top: 20px;
+  }
+  
+  .horarios h2, .encomendas h2, .endereco h2 {
+    font-size: 20px;
   }
 }
 
@@ -755,6 +833,125 @@ body {
     font-size: 28px;
   }
 
+  .pagina-cardapio {
+    height: 1480px;
+  }
+
+  .foto-principal-cardapio {
+    width: 100%;
+    height: 1480px;
+    position: absolute;
+  }
+
+  .conteudo-pagina-de-cardapio h2 {
+    font-size: 33px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .titulo-cardapio {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .imagens-cardapio img {
+    width: 105px;
+    height:125px;
+  }
+  
+  .produtos-cardapio h1 {
+    font-size: 16px;
+  }
+
+  .btn-pedido {
+    height: 33px;
+    width: 270px;
+    font-size: 19px;
+  }
+  
+  .btn-pedido:hover {
+    height: 33px;
+    width: 270px;
+    font-size: 20px;
+  }
+  
+  .botao-pedido {
+    padding-top: 110px;
+  }
+
+  .newsletter {
+    height: 430px;
+  }
+  
+  .linha-decoracao {
+    padding-top: 13px;
+  }
+
+  .linha1 {
+    margin-top: 5px;
+  }
+
+  .linha2 {
+    margin-top: -18px;
+  }
+  
+  .inputs-newsletter {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  .conteudo-newsletter h1 {
+    font-size: 36px;
+    padding-top: 52px;
+  }
+  
+  .conteudo-newsletter h3 {
+    font-size: 15px;
+    padding-top: 27px;
+    text-align:center;
+  }
+  
+  .input-nome, .input-email {
+    height: 29px;
+    width: 216px;
+    font-size: 12px;
+    margin: 10px;
+  }
+  
+  #iptEnviar {
+    height: 23px;
+    width: 154px;
+    font-size: 14px;
+  }
+  
+  #iptEnviar:hover {
+    height: 23px;
+    width: 154px;
+    font-size: 15px;
+  }
+  
+  #inputEnviar {
+    padding-top: 45px;
+  }
+
+  .footer {
+    height: 209px;
+  }
+  
+  .inf-footer {
+    padding-top: 33px;
+  }
+  
+  .horarios h1, .encomendas h1, .endereco h1 {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  
+  .horarios h2, .encomendas h2, .endereco h2 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -777,9 +974,10 @@ body {
   }
 
   .tradicao-landing-page {
-    font-size: 17px;
+    font-size: 21px;
     margin-left: 22px;
     padding-top: 82px;
+    text-align: left;
   }
 
   .paragrafo-landing-page {
@@ -848,6 +1046,133 @@ body {
   .pagina2 {
     height: 790px;
   }
+
+  .pagina-cardapio {
+    height: 1300px;
+  }
+
+  .foto-principal-cardapio {
+    width: 100%;
+    height: 1300px;
+    position: absolute;
+  }
+
+  .conteudo-pagina-de-cardapio h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .titulo-cardapio {
+    font-size: 37px;
+    text-align:center;
+    padding-left: 0;
+  }
+
+  .imagens-cardapio img {
+    width: 90px;
+    height:105px;
+  }
+  
+  .produtos-cardapio h1 {
+    font-size: 14px;
+  }
+
+  .imagens-cardapio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+  }
+
+  .btn-pedido {
+    height: 30px;
+    width: 240px;
+    font-size: 16px;
+  }
+  
+  .btn-pedido:hover {
+    height: 30px;
+    width: 240px;
+    font-size: 17px;
+  }
+  
+  .botao-pedido {
+    padding-top: 100px;
+  }
+
+  .newsletter {
+    height: 430px;
+  }
+  
+  .linha-decoracao {
+    padding-top: 13px;
+  }
+
+  .linha1 {
+    margin-top: 5px;
+  }
+
+  .linha2 {
+    margin-top: -12px;
+  }
+  
+  .inputs-newsletter {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  .conteudo-newsletter h1 {
+    font-size: 34px;
+    padding-top: 52px;
+  }
+  
+  .conteudo-newsletter h3 {
+    font-size: 13px;
+    padding-top: 27px;
+    text-align:center;
+  }
+  
+  .input-nome, .input-email {
+    height: 26px;
+    width: 193px;
+    font-size: 11px;
+    margin: 10px;
+  }
+  
+  #iptEnviar {
+    height: 22px;
+    width: 140px;
+    font-size: 13px;
+  }
+  
+  #iptEnviar:hover {
+    height: 22px;
+    width: 140px;
+    font-size: 15px;
+  }
+  
+  #inputEnviar {
+    padding-top: 45px;
+  }
+
+  .footer {
+    height: 196px;
+  }
+  
+  .inf-footer {
+    padding-top: 34px;
+  }
+  
+  .horarios h1, .encomendas h1, .endereco h1 {
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .horarios h2, .encomendas h2, .endereco h2 {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 340px) {
@@ -872,7 +1197,7 @@ body {
   }
 
   .tradicao-landing-page {
-    font-size: 21px;
+    font-size: 19px;
     margin-left: 30px;
     margin-right: 0;
     padding-top: 50px;
@@ -944,6 +1269,127 @@ body {
 
   .pagina2 {
     height: 800px;
+  }
+
+  .pagina-cardapio {
+    height: 1300px;
+  }
+
+  .foto-principal-cardapio {
+    width: 100%;
+    height: 1300px;
+    position: absolute;
+  }
+
+  .conteudo-pagina-de-cardapio h2 {
+    font-size: 28px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .titulo-cardapio {
+    font-size: 35px;
+    text-align:center;
+    padding-left: 0;
+  }
+
+  .imagens-cardapio img {
+    width: 70px;
+    height: 80px;
+  }
+  
+  .produtos-cardapio h1 {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .btn-pedido {
+    height: 27px;
+    width: 200px;
+    font-size: 13px;
+  }
+  
+  .btn-pedido:hover {
+    height: 27px;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .botao-pedido {
+    padding-top: 100px;
+  }
+
+  .newsletter {
+    height: 430px;
+  }
+  
+  .linha-decoracao {
+    padding-top: 13px;
+  }
+
+  .linha1 {
+    margin-top: 5px;
+  }
+
+  .linha2 {
+    margin-top: -12px;
+  }
+  
+  .inputs-newsletter {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  .conteudo-newsletter h1 {
+    font-size: 34px;
+    padding-top: 52px;
+  }
+  
+  .conteudo-newsletter h3 {
+    font-size: 13px;
+    padding-top: 27px;
+    text-align:center;
+  }
+  
+  .input-nome, .input-email {
+    height: 26px;
+    width: 173px;
+    font-size: 11px;
+    margin: 10px;
+  }
+  
+  #iptEnviar {
+    height: 20px;
+    width: 120px;
+    font-size: 11px;
+  }
+  
+  #iptEnviar:hover {
+    height: 20px;
+    width: 120px;
+    font-size: 13px;
+  }
+  
+  #inputEnviar {
+    padding-top: 45px;
+  }
+
+  .footer {
+    height: 170px;
+  }
+  
+  .inf-footer {
+    padding-top: 34px;
+  }
+  
+  .horarios h1, .encomendas h1, .endereco h1 {
+    font-size: 9px;
+    padding-top: 20px;
+  }
+  
+  .horarios h2, .encomendas h2, .endereco h2 {
+    font-size: 13px;
   }
 }
 
