@@ -488,6 +488,12 @@ body {
   font-size: 16px;
 }
 
+.erroInput {
+  height: 39px;
+  width: 238px;
+  border: 2px solid rgb(180, 28, 28) !important;
+}
+
 #iptEnviar {
   height: 39px;
   width: 238px;
