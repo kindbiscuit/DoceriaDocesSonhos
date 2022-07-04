@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <section class="header">
+        <section class="header" id="header">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Pedidos</a>
-                <a href="#">Home</a>
-                <a href="#">Conheça-nos</a>
-                <a href="#">Cardápio</a>
-                <a href="#">Informações</a>
+                <a href="#header">Home</a>
+                <a href="#pagina2">Conheça-nos</a>
+                <a href="#pagina-cardapio">Cardápio</a>
+                <a href="#newsletter">Informações</a>
                 <a href="#">Ver carrinho</a>
               </div>
               <span onclick="openNav()">
@@ -61,12 +61,13 @@
             </div>
             <p class="paragrafo-landing-page">Desde 1957, participamos da história das famílias dos nossos clientes, <br> servindo nossos doces artesanais e exclusivos.</p>
             <div class="cardapio-landing-page">
-                <button class="btn-cardapio" type="button">Cardápio</button>
+                <button class="btn-cardapio" type="button">
+                    <a href ="#pagina-cardapio">Cardápio</a></button>
             </div>
         </section>
     </section>
     <hr class="hr-landing-page">
-    <section class="pagina2">
+    <section class="pagina2" id="pagina2">
         <div class="conteudo-page2">
             <h2 class="titulo1-page2">Conheça a</h2>
             <h1 class="titulo2-page2">Doces Sonhos</h1>
@@ -93,7 +94,7 @@
         </div>
     </section>
     <hr class="hr-pagina2">
-    <section class="pagina-cardapio">
+    <section class="pagina-cardapio" id="pagina-cardapio">
         <img src="img/foto-pagina-de-cardapio.jpg" alt="" class="foto-principal-cardapio">
         <div class="conteudo-pagina-de-cardapio">
             <h1 class="titulo-cardapio">Cardápio</h1>
@@ -146,7 +147,7 @@
             </div>
         </div>
     </section>
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
         <div class="conteudo-newsletter">
             <div class="linha-decoracao">
                 <img src="img/decoracao.png" alt="" class="linha1">
