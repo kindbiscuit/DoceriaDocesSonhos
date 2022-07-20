@@ -34,9 +34,6 @@ body {
     width: 40px;
 }
 
-/* menu */
-
-/* The side navigation menu */
 .sidenav {
     height: 100%; 
     width: 0;
@@ -50,7 +47,6 @@ body {
     transition: 0.5s; 
   }
   
-  /* links menu */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   font-size: 25px;
@@ -96,4 +92,381 @@ body {
   background-color: white;
   margin: 6px 0;
   cursor: pointer;
+}
+
+#pag-pedido {
+  height: 2270px;
+  background-color: #fcf4ee;
+}
+
+#titulo-pedido {
+  display: flex;
+  align-items: flex-start;
+}
+
+#titulo-pedido h1 {
+  font-family: Josefin Sans;
+  color: #E9A96F;
+  font-size: 42px;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+
+.conteudo-pedido img {
+  width: 145px;
+  height: 170px;
+  border: solid 1px #E9A96F;
+  margin-top: 50px;
+}
+
+.preco-pedido h3 {
+  font-family: Josefin Sans;
+  color: #753E0C;
+  font-size: 28px;
+  font-weight: 500;
+  padding-top: 11px;
+}
+
+.produtos-pedido h3 {
+  font-family: EB Garamond;
+  font-size: 20px;
+  color:#db9049;
+  font-weight: 500;
+}
+
+.adicionar-pedidos button {
+  width: 145px;
+  height: 33px;
+  background-color: #8EBB7E;
+  border: 0;
+  border-radius: 14px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.adicionar-pedidos button:hover{
+  width: 145px;
+  height: 33px;
+  background-color: #6c8d5f;
+  border: 0;
+  border-radius: 14px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.adicionar-pedidos {
+  margin-top: 10px;
+}
+
+.imagens-pedido, .preco-pedido, .produtos-pedido, .adicionar-pedidos {
+  display: flex;
+  justify-content: space-around;
+}
+
+#ver_carrinho button {
+  width: 190px;
+  height: 36px;
+  border-radius: 14px;
+  border: 0;
+  background-color: #753E0C;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#ver_carrinho button:hover {
+  width: 190px;
+  height: 36px;
+  border-radius: 14px;
+  border: 0;
+  background-color: #94561d;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#ver_carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    height: 150px;
+  }
+
+  .logo-site {
+    height: 120px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .icone-menu {
+    width: 26px;
+    height: 3px; 
+  }
+
+  #pag-pedido {
+    height: 2200px;
+  }
+
+  #titulo-pedido h1 {
+    font-size: 41px;
+  }
+
+  .conteudo-pedido img {
+    width: 140px;
+    height: 163px;
+  }
+
+  .preco-pedido h3 {
+    font-size: 26px;
+  }
+
+  .produtos-pedido h3 {
+    font-size: 19px;
+  }
+
+  .adicionar-pedidos button {
+    width: 140px;
+    height: 31px;
+    font-size: 11px;
+  }
+  
+  .adicionar-pedidos button:hover{
+    width: 140px;
+    height: 31px;
+    font-size: 11px;
+  }
+
+  #ver_carrinho button {
+    width: 188px;
+    height: 34px;
+    font-size: 16px;
+  }
+  
+  #ver_carrinho button:hover {
+    width: 188px;
+    height: 34px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 140px;
+  }
+
+  .logo-site {
+    height: 113px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 31px;
+    width: 31px;
+  }
+
+  .icone-menu {
+    width: 22px;
+    height: 2px; 
+  }
+
+  #pag-pedido {
+    height: 2030px;
+  }
+
+  #titulo-pedido h1 {
+    font-size: 38px;
+    margin-left: 50px;
+  }
+
+  .conteudo-pedido img {
+    width: 130px;
+    height: 146px;
+  }
+
+  .preco-pedido h3 {
+    font-size: 23px;
+  }
+
+  .produtos-pedido h3 {
+    font-size: 17px;
+  }
+
+  .adicionar-pedidos button {
+    width: 135px;
+    height: 28px;
+    font-size: 10px;
+  }
+  
+  .adicionar-pedidos button:hover{
+    width: 135px;
+    height: 28px;
+    font-size: 10px;
+  }
+
+  #ver_carrinho button {
+    width: 184px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  #ver_carrinho button:hover {
+    width: 184px;
+    height: 32px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 130px;
+  }
+
+  .logo-site {
+    height: 108px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 27px;
+    width: 27px;
+  }
+
+  .icone-menu {
+    width: 19px;
+    height: 2px; 
+  }
+
+  #pag-pedido {
+    height: 1840px;
+  }
+
+  #titulo-pedido h1 {
+    font-size: 33px;
+    margin-left: 0;
+  }
+
+  #titulo-pedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conteudo-pedido img {
+    width: 113px;
+    height: 127px;
+  }
+
+  .preco-pedido h3 {
+    font-size: 20px;
+  }
+
+  .produtos-pedido h3 {
+    font-size: 15px;
+  }
+
+  .adicionar-pedidos button {
+    width: 126px;
+    height: 23px;
+    font-size: 9px;
+  }
+  
+  .adicionar-pedidos button:hover{
+    width: 126px;
+    height: 23px;
+    font-size: 9px;
+  }
+
+  #ver_carrinho button {
+    width: 178px;
+    height: 29px;
+    font-size: 12px;
+  }
+  
+  #ver_carrinho button:hover {
+    width: 178px;
+    height: 29px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .header {
+    height: 110px;
+  }
+
+  .logo-site {
+    height: 88px;
+    padding-right: 30px;
+  }
+
+  .instagram, .twitter, .facebook {
+    height: 19px;
+    width: 19px;
+  }
+
+  .icone-menu {
+    width: 17px;
+    height: 2px;
+    margin-left: 10px;
+  }
+
+  #pag-pedido {
+    height: 1760px;
+  }
+
+  #titulo-pedido h1 {
+    font-size: 30px;
+    margin-left: 0;
+  }
+
+  #titulo-pedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conteudo-pedido img {
+    width: 100px;
+    height: 118px;
+  }
+
+  .preco-pedido h3 {
+    font-size: 17px;
+  }
+
+  .produtos-pedido h3 {
+    font-size: 13px;
+  }
+
+  .adicionar-pedidos button {
+    width: 112px;
+    height: 21px;
+    font-size: 7px;
+  }
+  
+  .adicionar-pedidos button:hover{
+    width: 112px;
+    height: 21px;
+    font-size: 7px;
+  }
+
+  #ver_carrinho button {
+    width: 156px;
+    height: 25px;
+    font-size: 10px;
+  }
+  
+  #ver_carrinho button:hover {
+    width: 156px;
+    height: 25px;
+    font-size: 11px;
+  }
 }
