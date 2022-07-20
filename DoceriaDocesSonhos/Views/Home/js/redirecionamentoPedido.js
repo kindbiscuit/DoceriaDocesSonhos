@@ -1,3 +1,4 @@
 function open_home() {
-    window.location.replace('index.html')
+    window.location.assign('index.html')
 }
+
