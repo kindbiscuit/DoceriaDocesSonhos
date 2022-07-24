@@ -1,3 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+}
+
+.header {
+    display: flex;
+    background-color:#E9A96F;
+    height: 160px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-site {
+    height: 140px;
+    margin-left: 60px;
+    margin-right: -20px;
+    cursor: pointer;
+}
+
+.instagram, .twitter, .facebook {
+    height: 40px;
+    width: 40px;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #753E0C;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  margin: 18px;
+  padding-top: 30px;
+  font-family: Josefin Sans;
+}
+  
+.sidenav a:hover {
+  color: #E9A96F;
+  font-size: 28px;
+}
+  
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  font-size: 50px;
+  margin-left: 50px;
+  padding-top: 30px;
+}
+  
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+  
+@media screen and (max-height: 450px) {
+  .sidenav { 
+    padding-top: 15px;
+  }
+  .sidenav a { 
+    font-size: 18px;
+  }
+}
+
+.icone-menu {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+#conteudo {
+    margin-top: 40px;
+}
+
+.titulo-carrinho h1 {
+    font-family: Josefin Sans;
+    color: #E9A96F;
+    font-size: 47px;
+}
+
+.titulo-carrinho {
+    margin-top: 84px;
+    margin-left: 170px;
+}
+
+.linhas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.linhas h3 {
+    font-family: EB Garamond;
+    color: #753E0C;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.circulo1, .circulo4 {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 200px;
+    height: 30px;
+    background-color: #8EBB7E;
+}
+
+.circulo2 {
+    margin-left: 17px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 200px;
+    height: 30px;
+    background-color: #8EBB7E;
+}
+
+.circulo1, .circulo2, .circulo4 p{
+    text-align: center;
+    color: white;
+    font-family: EB Garamond;
+    font-size: 18px;
+}
+
+.input input {
+    margin-right: 19px;
+    text-align: center;
+    border-radius: 12px;
+    color: white;
+    font-family: EB Garamond;
+    font-size: 18px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    background-color: #8EBB7E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
