@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Cart>
+<section id="carrinho">
+    <div class="titulo-carrinho">
+        <h1>Carrinho</h1>
+    </div>
+    @foreach (var product in Model)
+    {
+        <div id="conteudo">
+            <div class="linhas">
+                <h3>Produto</h3>
+                <div class="circulo2">
+                    <p>@product.Product.Nome</p>
+                </div>
+            </div>
+            <div class="linhas">
+                <h3>Preço</h3>
+                <div class="circulo2">
+                    <p>R$@product.Product.Preco</p>
+                </div>
+            </div>
+            <div class="linhas">
+                <h3>Quantidade</h3>
+                <div class="circulo2">
+                    <p>@product.ProductQuantity</p>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="linhas">
+      <h3>Subtotal</h3>
+         <div class="circulo2">
+             <p>R$@Model.Sum(x=> x.Total)</p>
+         </div>
+    </div>
+</section>

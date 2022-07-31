@@ -1,4 +1,4 @@
-﻿using DoceriaDocesSonhos.Domain.Models;
+﻿using DoceriaDocesSonhos.Models;
 using DoceriaDocesSonhos.Manager.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,19 +10,24 @@ namespace DoceriaDocesSonhos.Controllers
 {
     public class CartController : Controller
     {
-        private ICartManager _cartManager { get; set; }
-        public CartController(ICartManager cartManager) {
-            _cartManager = cartManager;
-        }
-        public IActionResult Add(Cart cart)
+        //private ICartManager _cartManager { get; set; }
+        //public CartController(ICartManager cartManager) {
+        //    _cartManager = cartManager;
+        //}
+        [HttpGet]
+        public IActionResult Index()
         {
-           _cartManager.AddCart(cart);
-            return View();
+            return View("carrinho");
         }
-        public IActionResult Delete(Cart cart)
-        {
-            _cartManager.DeleteCart(cart);
-            return View();
-        }
+        //public IActionResult Add(Cart cart)
+        //{
+        //   _cartManager.AddCart(cart);
+        //    return View();
+        //}
+        //public IActionResult Delete(Cart cart)
+        //{
+        //    _cartManager.DeleteCart(cart);
+        //    return View();
+        //}
     }
 }

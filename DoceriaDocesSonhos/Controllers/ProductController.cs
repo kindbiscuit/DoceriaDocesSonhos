@@ -8,14 +8,9 @@ using System.Threading.Tasks;
 
 namespace DoceriaDocesSonhos.Controllers
 {
-    [Route("")]
-    [Route("Doceria-doces-sonhos")]
     public class ProductController : Controller
     {
         [HttpGet]
-        [Route("")]
-        [Route("Home/Index")]
-        [Route("Pagina-inicial")]
         public IActionResult Index()
         {
             return View();

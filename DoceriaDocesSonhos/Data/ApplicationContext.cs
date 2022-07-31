@@ -1,5 +1,4 @@
 ﻿using DoceriaDocesSonhos.Data.Configuration;
-using DoceriaDocesSonhos.Domain.Models;
 using DoceriaDocesSonhos.Models;
 using Microsoft.EntityFrameworkCore;
 using System;

@@ -7,7 +7,17 @@ namespace DoceriaDocesSonhos.Models
 {
     public class Product
     {
-       [Key]
+        public Product(string nome, string descricao, decimal preco, int quantidadeDisponivel, EnumTipoDeDoce tipoDeDoce)
+        {
+            Id = new Guid();
+            Nome = nome;
+            Descricao = descricao;
+            Preco = preco;
+            QuantidadeDisponivel = quantidadeDisponivel;
+            TipoDeDoce = tipoDeDoce;
+        }
+
+        [Key]
         public Guid Id { get;}
         [Required(ErrorMessage ="O campo {0} é obrigatório")]
         [Display(Name ="Nome")]

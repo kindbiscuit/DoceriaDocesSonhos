@@ -2,17 +2,26 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace DoceriaDocesSonhos.Domain.Models
+namespace DoceriaDocesSonhos.Models
 {
     public class Cart
     {
+
+        public Cart(int id, int idUser, Product product, int productQuantity)
+        {
+            Id = id;
+            IdUser = idUser;
+            Product = product;
+            ProductQuantity = productQuantity;
+            InclusionDate = DateTime.Now;
+        }
+
         public int Id { get; set; }
         public int IdUser { get; set; }
         public Product Product { get; set; }
         public int ProductQuantity { get; set; }
-        [DataType(DataType.DateTime, ErrorMessage ="Data em formato inválido")]
         public DateTime? InclusionDate { get; set; }
-        private decimal Total { get 
+        public decimal Total { get 
             {
                 return this.Product.Preco * this.ProductQuantity;
             } }
