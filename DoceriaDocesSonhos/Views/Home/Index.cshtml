@@ -1,62 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doceria Doces Sonhos</title>
-    <link rel="stylesheet" type="text/css" href="style/home.css">
-</head>
-<body>
-    <header>
-        <section class="header" id="header">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" onclick="open_pedidos()">Pedidos</a>
-                <a href="#header">Home</a>
-                <a href="#pagina2">Conheça-nos</a>
-                <a href="#pagina-cardapio">Cardápio</a>
-                <a href="#newsletter">Informações</a>
-                <a href="#pagina-carrinho" onclick="open_carrinho()">Ver carrinho</a>
-            </div>
-            <span onclick="openNav()">
-                <div class="icone-menu"></div>
-                <div class="icone-menu"></div>
-                <div class="icone-menu"></div>
-            </span>
-            <div>
-                <a href="#header">
-                    <img src="img/logo-site.png" class="logo-site" alt="logo do site">
-                </a>
-            </div>
-            <nav class="icones">
-                <a href="https://www.instagram.com/elida.gouv/" target="_blank">
-                    <img src="img/icone-instagram.png" class="instagram" alt="nosso instagram">
-                </a>
-                <a href="https://twitter.com/egouveia_" target="_blank">
-                    <img src="img/icone-twitter.png" class="twitter" alt="nosso twitter"></a>
-                <a href="https://www.facebook.com/profile.php?id=100007895179325" target="_blank">
-                    <img src="img/icone-facebook.png" class="facebook" alt="nosso facebook"></a>
-            </nav>
-        </section>
-    </header>
-
-    <section class="main-landing-page">
+﻿    <section class="main-landing-page">
         <div class="carousel">
             <div class="primeiro_carrossel carousel_item carousel_item--visible">
-                <img src="img/foto-principal.jpg" alt="foto bolo de chocolate">
+                <img src="/img/foto-principal.jpg" alt="foto bolo de chocolate">
             </div>
             <div class="primeiro_carrossel carousel_item">
-                <img src="img/foto-creme.jpg" alt="foto de um creme">
+                <img src="/img/foto-creme.jpg" alt="foto de um creme">
             </div>
             <div class="primeiro_carrossel carousel_item">
-                <img src="img/muffin.jpg" alt="foto muffin">
+                <img src="/img/muffin.jpg" alt="foto muffin">
             </div>
             <div class="carousel_actions">
                 <button onclick="logicaCarrossel('primeiro_carrossel', false)" aria-label="Previous"><</button>
                 <button onclick="logicaCarrossel('primeiro_carrossel', true)" aria-label="Next">></button>
             </div>
         </div>
-      
+
         <section class="conteudo-landing-page">
             <div class="tradicao-landing-page">
                 <h1>TRADIÇÃO DESDE 1957</h1>
@@ -64,7 +22,8 @@
             <p class="paragrafo-landing-page">Desde 1957, participamos da história das famílias dos nossos clientes, <br> servindo nossos doces artesanais e exclusivos.</p>
             <div class="cardapio-landing-page">
                 <button class="btn-cardapio" type="button">
-                    <a href ="#pagina-cardapio">Cardápio</a></button>
+                    <a href="#pagina-cardapio">Cardápio</a>
+                </button>
             </div>
         </section>
     </section>
@@ -73,20 +32,21 @@
         <div class="conteudo-page2">
             <h2 class="titulo1-page2">Conheça a</h2>
             <h1 class="titulo2-page2">Doces Sonhos</h1>
-            <p class="paragrafo-page2">Já conhece nossa doceria? Provar alguma especialidade nossa é como estar <br> em um dos seus melhores sonhos! Além de criarmos um clima acolhedor, <br> tudo o que é servido por aqui é feito com muita particularidade e amor. <br> Confira nossos produtos mais pedidos:
+            <p class="paragrafo-page2">
+                Já conhece nossa doceria? Provar alguma especialidade nossa é como estar <br> em um dos seus melhores sonhos! Além de criarmos um clima acolhedor, <br> tudo o que é servido por aqui é feito com muita particularidade e amor. <br> Confira nossos produtos mais pedidos:
             </p>
-            <div class="carousel2"> 
+            <div class="carousel2">
                 <div class="segundo_carrossel carousel_item carousel_item--visible">
-                    <img src="img/torta-de-cafe.jpg" alt="foto de uma torta de café">
+                    <img src="/img/torta-de-cafe.jpg" alt="foto de uma torta de café">
                 </div>
                 <div class="segundo_carrossel carousel_item">
-                    <img src="img/brownie.jpg" alt="foto de um brownie">
+                    <img src="/img/brownie.jpg" alt="foto de um brownie">
                 </div>
                 <div class="segundo_carrossel carousel_item">
-                    <img src="img/bolo-de-limao.jpg" alt="foto de um bolo de limão">
+                    <img src="/img/bolo-de-limao.jpg" alt="foto de um bolo de limão">
                 </div>
                 <div class="segundo_carrossel carousel_item">
-                    <img src="img/macarons.jpg" alt="foto de macarons">
+                    <img src="/img/macarons.jpg" alt="foto de macarons">
                 </div>
                 <div class="carousel_actions">
                     <button onclick="logicaCarrossel('segundo_carrossel', false)" aria-label="Previous"><</button>
@@ -145,7 +105,7 @@
                 <h1 class="produto12">Pudim tradicional</h1>
             </div>
             <div class="botao-pedido">
-                <button type="button" class="btn-pedido" id="btn-pedido" onclick="fazer_pedido()">Faça seu pedido</button>
+                <a type="button" class="btn-pedido" id="btn-pedido" asp-controller="Pedido" asp-action="Index">Faça seu pedido</a>
             </div>
         </div>
     </section>
@@ -168,35 +128,3 @@
             </div>
         </form>
     </section>
-    <footer>
-        <section class="footer">
-            <div class="linha-decoracao">
-                <img src="img/decoracao.png" alt="" class="linha1">
-                <img src="img/decoracao.png" alt="" class="linha2">
-            </div>
-            <div class="inf-footer">
-                <div class="horarios">
-                    <h2>Horários da doceria:</h2>
-                    <h1>Segunda a sexta - 9h às 17h</h1>
-                    <h1>Sábado - 13h às 19h</h1>
-                </div>
-                <div class="encomendas">
-                    <h2>Encomendas:</h2>
-                    <h1>docesonhos@gmail.com</h1>
-                    <h1>(87)99171-2835</h1>
-                </div>
-                <div class="endereco">
-                    <h2>Onde nos encontrar:</h2>
-                    <h1>Av. Adjar da Silva Casé, <br> 800 - Indianópolis, <br> Caruaru - PE</h1>
-                </div>
-            </div>
-        </section>
-    </footer>
-
-    <script type="text/javascript" src="js/menuHome.js"></script>
-    <script type="text/javascript" src="js/carrosselHome.js"></script>
-    <script type="text/javascript" src="js/redirecionamentoHome.js"></script>
-    <script type="text/javascript" src="js/redirecionamentoPedido.js"></script>
-
-</body>
-</html>

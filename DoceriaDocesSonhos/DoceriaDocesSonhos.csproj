@@ -5,7 +5,47 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\carrinho.cshtml" />
+    <Content Remove="Views\Home\pedido.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Cart\carrinho.cshtml" />
+    <None Include="Views\Pedido\pedido.cshtml" />
+    <None Include="wwwroot\img\bolo-de-chocolate.jpg" />
+    <None Include="wwwroot\img\bolo-de-limao.jpg" />
+    <None Include="wwwroot\img\brigadeiro.jpg" />
+    <None Include="wwwroot\img\brownie.jpg" />
+    <None Include="wwwroot\img\cheesecake-maca.jpg" />
+    <None Include="wwwroot\img\decoracao.png" />
+    <None Include="wwwroot\img\donuts.jpg" />
+    <None Include="wwwroot\img\foto-creme.jpg" />
+    <None Include="wwwroot\img\foto-pagina-de-cardapio.jpg" />
+    <None Include="wwwroot\img\foto-principal.jpg" />
+    <None Include="wwwroot\img\icone-facebook.png" />
+    <None Include="wwwroot\img\icone-instagram.png" />
+    <None Include="wwwroot\img\icone-twitter.png" />
+    <None Include="wwwroot\img\logo-site.png" />
+    <None Include="wwwroot\img\macarons.jpg" />
+    <None Include="wwwroot\img\muffin.jpg" />
+    <None Include="wwwroot\img\pudim.jpg" />
+    <None Include="wwwroot\img\sonho.jpg" />
+    <None Include="wwwroot\img\torta-de-cafe.jpg" />
+    <None Include="wwwroot\img\torta-de-morango.jpg" />
+    <None Include="wwwroot\img\torta-doce-de-leite.jpg" />
+    <None Include="wwwroot\js\carrosselHome.js" />
+    <None Include="wwwroot\js\menuHome.js" />
+    <None Include="wwwroot\js\newsletterHome.js" />
+    <None Include="wwwroot\js\redirecionamentoHome.js" />
+    <None Include="wwwroot\js\redirecionamentoPedido.js" />
+    <None Include="wwwroot\style\carrinho.css" />
+    <None Include="wwwroot\style\home.css" />
+    <None Include="wwwroot\style\pedido.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.15">
       <PrivateAssets>all</PrivateAssets>

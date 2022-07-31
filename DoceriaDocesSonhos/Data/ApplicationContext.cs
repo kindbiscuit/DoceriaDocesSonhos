@@ -19,6 +19,7 @@ namespace DoceriaDocesSonhos.Data
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
         }
         public DbSet<Product> produtos { get; set; }
+        public DbSet<Cart> cart { get; set; }
 
     }
 }
